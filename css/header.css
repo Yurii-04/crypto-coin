@@ -1,0 +1,128 @@
+#header {
+    padding: 10px;
+    background: url(../img/header-bg.svg) no-repeat center/cover;
+    min-height: 100vh;
+    overflow: hidden;
+    font-size: .6rem;
+}
+
+.header__menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-wrapper__item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu__item {
+    font-family: Lato;
+    display: block;
+    text-decoration: none;
+    position: relative;
+    margin: 0 60px;
+    text-align: center;
+    color: #000;
+    max-height: 35px;
+}
+
+.menu__item::after {
+    content: "";
+    background: white;
+    mix-blend-mode: exclusion;
+    width: calc(100% + 20px);
+    height: 0;
+    position: absolute;
+    bottom: -4px;
+    left: -10px;
+    transition: all .3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    border-radius: 10px;
+}
+
+@media (min-width: 1024px) {
+    .menu__item:hover::after {
+        height: calc(100% + 8px)
+    }
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    z-index: 4;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #000;
+    padding: 10px 12px;
+    border-radius: 50%;
+}
+
+.bar {
+    display: block;
+    height: 3px;
+    margin: 5px 0;
+    transition: all .5s ease;
+    background-color: #ffffff;
+}
+
+.bar:nth-child(1) {
+    width: 25px;
+}
+
+.bar:nth-child(2) {
+    width: 20px;
+}
+
+.bar:nth-child(3) {
+    width: 15px;
+}
+
+@media (max-width: 1024px) {
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .menu-wrapper__item {
+        position: fixed;
+        left: 0;
+        top: -110%;
+        height: 100vh;
+        gap: 0;
+        flex-direction: column;
+        background-color: #afa9a9;
+        width: 100%;
+        text-align: center;
+        transition: .3s;
+        z-index: 3;
+        justify-content: center;
+    }
+
+    .menu__item {
+        margin: 16px 0;
+    }
+
+    .menu__item:hover {
+        text-decoration: underline;
+    }
+
+    .menu-wrapper__item.active {
+        top: 0;
+    }
+
+    .hamburger.active {
+        position: fixed;
+    }
+}

@@ -1,0 +1,111 @@
+#history {
+    min-height: 100vh;
+    max-width: 1600px;
+    margin: auto;
+}
+
+.history__title {
+    padding-top: 50px;
+    text-align: center;
+    letter-spacing: 7px;
+}
+
+.history__subtitle {
+    margin-top: 40px;
+    text-align: center;
+}
+
+/* picture */
+@property --rotate {
+    syntax: "<angle>";
+    initial-value: 132deg;
+    inherits: false;
+}
+
+.history__inner-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.history__card {
+    background: #191c29;
+    width: var(--card-width);
+    height: var(--card-height);
+    padding: 3px;
+    position: relative;
+    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    font-size: 1.5em;
+    color: rgb(88 199 250 / 0%);
+    cursor: pointer;
+    font-family: cursive;
+}
+
+.history__card:nth-child(1) {
+    background-image: url(../img/samurai.svg);
+    background-repeat: no-repeat;
+}
+
+.history__card:nth-child(2) {
+    background-image: url(../img/fox.svg);
+    background-repeat: no-repeat;
+}
+
+.history__card:nth-child(3) {
+    background-image: url(../img/kong.svg);
+    background-repeat: no-repeat;
+}
+
+.history__card:hover {
+    color: rgb(88 199 250 / 100%);
+    transition: color 1s;
+    background-image: none;
+}
+
+.history__card::before {
+    content: "";
+    width: 104%;
+    height: 102%;
+    border-radius: 8px;
+    background-image: linear-gradient(var(--rotate), #ffe02e, #e26d00 43%, #b6a6a6);
+    position: absolute;
+    z-index: -1;
+    top: -1%;
+    left: -2%;
+    animation: spin 2.5s linear infinite;
+}
+
+.history__card::after {
+    position: absolute;
+    content: "";
+    top: calc(var(--card-height) / 6);
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    transform: scale(0.8);
+    filter: blur(calc(var(--card-height) / 6));
+    background-image: linear-gradient(var(--rotate), #ffe02e, #e26d00 43%, #b6a6a6);
+    opacity: 1;
+    transition: opacity .5s;
+    animation: spin 2.5s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        --rotate: 0deg;
+    }
+
+    100% {
+        --rotate: 360deg;
+    }
+}
+

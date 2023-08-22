@@ -1,0 +1,47 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+:root {
+    font-family: Gagalin;
+    font-size: 2.5rem;
+    color: #ffd5d5;
+    background-color: #000;
+    --loader-bg : linear-gradient(to bottom, #111, #333 30%, #666);
+    --loader-section-bg : #f3fcff;
+    --header__title-color: #f8ece3;
+    --index: calc(1vw + 1vh);
+    --glow-color: hsl(0, 0%, 0%);
+    --rotationDuration: 20s;
+    --hoverDuration: 0.3s;
+    --easeIn: cubic-bezier(0.32, 0, 0.67, 0);
+    --easeOut: cubic-bezier(0.33, 1, 0.68, 1);
+    --textColor: #2B3338;
+    --bgColor: #A6B8B1;
+    --accentColor: #E8D6C1;
+    --card-height: 55vh;
+    --card-width: calc(var(--card-height) / 1.6);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    letter-spacing: 7px;
+}
+
+.container {
+    max-width: 1300px;
+    margin: auto;
+    padding: 7px;
+}
+
+.none {
+    display: none;
+}
