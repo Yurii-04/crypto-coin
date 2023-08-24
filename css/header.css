@@ -102,7 +102,9 @@
         height: 100vh;
         gap: 0;
         flex-direction: column;
-        background-color: #afa9a9;
+        background: url(../img/burger-bg.gif);
+        background-repeat: no-repeat;
+        background-size: cover;
         width: 100%;
         text-align: center;
         transition: .3s;
@@ -112,6 +114,7 @@
 
     .menu__item {
         margin: 16px 0;
+        color: #fccccc;
     }
 
     .menu__item:hover {

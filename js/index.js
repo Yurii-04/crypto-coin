@@ -1,8 +1,7 @@
 document.addEventListener('partialsLoaded', () => {
-    import('./carousel.js');
-    import('./animation.js');
-    import('./history-carousel.js');
+    import('./animations/loader.js');
     import('./hamburger.js');
+    import('./history-carousel.js');
 });
 
 

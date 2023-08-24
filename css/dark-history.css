@@ -27,9 +27,16 @@
 .dark-history__wrapper-card {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 6rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
+}
+
+@media (max-width: 1000px) {
+    .dark-history__wrapper-card{
+        gap: 2rem;
+    }
 }
 
 .dark-history__card {
@@ -70,7 +77,7 @@
     width: 104%;
     height: 102%;
     border-radius: 8px;
-    background-image: linear-gradient(var(--rotate), #ffe02e, #e26d00 43%, #b6a6a6);
+    background-image: linear-gradient(var(--rotate), #c7c4b2, #696969 43%, #363535);
     position: absolute;
     z-index: -1;
     top: -1%;
@@ -90,7 +97,7 @@
     margin: 0 auto;
     transform: scale(0.8);
     filter: blur(calc(var(--card-height) / 6));
-    background-image: linear-gradient(var(--rotate), #ffe02e, #e26d00 43%, #b6a6a6);
+    background-image: linear-gradient(var(--rotate), #c7c4b2, #696969 43%, #363535);
     opacity: 1;
     transition: opacity .5s;
     animation: spin 2.5s linear infinite;
@@ -106,13 +113,13 @@
     }
 }
 
-@media (max-width: 824px) {
+@media (max-width: 924px) {
     .dark-history__wrapper-card {
         flex-direction: column;
         justify-content: center;
     }
 
     .dark-history__card:nth-child(1) {
-        margin-bottom: 10vh;
+        margin-bottom: 5vh;
     }
 }

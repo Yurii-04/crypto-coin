@@ -18,7 +18,7 @@
 }
 
 .loader__logo img {
-    max-width: 40vw;
+    max-width: 60vw;
 }
 
 .loader__item {
@@ -27,11 +27,7 @@
     background-color: var(--loader-section-bg);
 }
 
-.loader__item-1 {
-    border-right: 1px solid #000000 ;
-}
-
+.loader__item-1,
 .loader__item-2 {
     border-right: 1px solid #000000 ;
 }
-
