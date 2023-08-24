@@ -98,7 +98,7 @@
     .menu-wrapper__item {
         position: fixed;
         left: 0;
-        top: -110%;
+        top: -140%;
         height: 100vh;
         gap: 0;
         flex-direction: column;
