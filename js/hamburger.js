@@ -33,6 +33,7 @@ document.querySelectorAll(".menu__item").forEach((n) =>
     n.addEventListener("click", () => {
         hamburger.classList.remove("active");
         navMenu.classList.remove("active");
+        document.documentElement.style.overflow = "auto";
         navMenu.blur();
     })
 );
