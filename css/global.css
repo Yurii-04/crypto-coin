@@ -6,18 +6,14 @@
     box-sizing: border-box;
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
 :root {
+    scroll-behavior: smooth;
     font-family: Gagalin;
     font-size: 2.5rem;
     color: #ffd5d5;
     background-color: #000;
-    --loader-bg : linear-gradient(to bottom, #111, #333 30%, #666);
-    --loader-section-bg : #f3fcff;
+    --loader-bg: linear-gradient(to bottom, #111, #333 30%, #666);
+    --loader-section-bg: #f3fcff;
     --header__title-color: #f8ece3;
     --index: calc(1vw + 1vh);
     --glow-color: hsl(0, 0%, 0%);
@@ -32,8 +28,22 @@ a {
     --card-width: calc(var(--card-height) / 1.6);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     letter-spacing: 7px;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
 .container {

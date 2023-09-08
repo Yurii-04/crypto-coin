@@ -6,13 +6,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    margin-bottom: 25vh;
 }
 
 .roadmap__title {
     text-align: center;
     margin: 5vh 0;
-    
 }
 
 .gallery {
@@ -41,19 +40,21 @@
     flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    
 }
 
 .gallery__img--inner h3 {
-    font-size: .8rem;
+    font-size: 1rem; /* Increased font size for better readability */
     text-align: center;
     color: #cac0c0;
+    margin-top: 0; /* Remove default margin for h3 element */
 }
 
 .gallery__img--inner p {
-    font-size: .6rem;
+    font-size: 0.8rem; /* Increased font size for better readability */
     padding: 10px 0;
     color: #cec4c4;
+    margin-bottom: 0; /* Remove default margin for p element */
 }
 
 @media (min-width: 768px) {
@@ -70,7 +71,7 @@
     }
 
     .gallery__img--inner {
-        height: 384px;
+        height: auto; /* Allow the height to adjust based on content */
     }
 }
 
@@ -103,32 +104,6 @@
     }
 
     .gallery__img--inner {
-        height: 250px;
+        height: auto; /* Allow the height to adjust based on content */
     }
-}
-
-/* Scroll*/
-.gallery__img--inner p {
-    overflow: auto;
-    scrollbar-width: thin;  /* Firefox */
-    scrollbar-color: #aaa #ddd;  /* Firefox */
-}
-
-/* WebKit (Chrome, Safari) */
-.gallery__img--inner p::-webkit-scrollbar {
-    width: 3px;
-}
-
-.gallery__img--inner p::-webkit-scrollbar-thumb {
-    background-color: #aaa;
-    border-radius: 8px;
-}
-
-.gallery__img--inner p::-webkit-scrollbar-thumb:hover {
-    background-color: #777;
-}
-
-.gallery__img--inner p::-webkit-scrollbar-track {
-    background-color: #ddd;
-    border-radius: 8px;
 }

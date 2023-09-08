@@ -40,7 +40,7 @@
 }
 
 .dark-history__card {
-    background: #191c29;
+    background: #4f4f52;
     width: var(--card-width);
     height: var(--card-height);
     padding: 3px;
