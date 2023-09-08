@@ -2,8 +2,7 @@
     padding: 10px;
     background: url(../img/header-bg.svg) no-repeat center/cover;
     min-height: 100vh;
-    overflow: hidden;
-    font-size: .6rem;
+    font-size: 0.6rem;
 }
 
 .header__menu {
@@ -36,13 +35,13 @@
     position: absolute;
     bottom: -4px;
     left: -10px;
-    transition: all .3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    transition: all 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
     border-radius: 10px;
 }
 
 @media (min-width: 1024px) {
     .menu__item:hover::after {
-        height: calc(100% + 8px)
+        height: calc(100% + 8px);
     }
 }
 
@@ -62,7 +61,7 @@
     display: block;
     height: 3px;
     margin: 5px 0;
-    transition: all .5s ease;
+    transition: all 0.5s ease;
     background-color: #ffffff;
 }
 
@@ -107,7 +106,7 @@
         background-size: cover;
         width: 100%;
         text-align: center;
-        transition: .3s;
+        transition: 0.3s;
         z-index: 3;
         justify-content: center;
     }
@@ -127,5 +126,28 @@
 
     .hamburger.active {
         position: fixed;
+    }
+}
+
+/* Призначений стан (після видалення класу .hidden) */
+@media (min-width: 1024px) {
+    .header {
+        transform: scale(2);
+        transition: transform 2s ease-in-out;
+    }
+
+    .header.zoomed {
+        transform: scale(1);
+    }
+
+    .header__menu {
+        opacity: 0;
+        transform: translateY(-20px);
+        transition: opacity 1s ease, transform 1s ease;
+    }
+
+    .header__menu.visible {
+        opacity: 1;
+        transform: translateY(0);
     }
 }

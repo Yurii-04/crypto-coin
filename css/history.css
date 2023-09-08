@@ -109,3 +109,12 @@
     }
 }
 
+@media (max-width: 1120px) { 
+    .history__inner-card {
+        display: block;
+    }
+    .history__card {
+        margin: auto;
+        margin-bottom: 40px;
+    }
+}
