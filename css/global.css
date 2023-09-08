@@ -55,3 +55,7 @@ a {
 .none {
     display: none;
 }
+
+html.overflow-hidden {
+    overflow: hidden;
+}

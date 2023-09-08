@@ -9,7 +9,13 @@ const headerElement = document.querySelector(".header");
 
 setTimeout(function () {
     headerElement.classList.add("zoomed");
-
 }, 3500);
 
-
+setTimeout(function () {
+    const menuItems = document.querySelectorAll(".menu__item");
+    menuItems.forEach(function (item, index) {
+        setTimeout(function () {
+            item.classList.add("visible");
+        }, index * 100); 
+    });
+}, 6000);
