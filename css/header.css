@@ -3,6 +3,7 @@
     background: url(../img/header-bg.svg) no-repeat center/cover;
     min-height: 100vh;
     font-size: 0.6rem;
+    scale: 1;
 }
 
 .header__menu {
@@ -129,25 +130,19 @@
     }
 }
 
-/* Призначений стан (після видалення класу .hidden) */
-@media (min-width: 1024px) {
-    .header {
-        transform: scale(2);
-        transition: transform 2s ease-in-out;
-    }
+.header {
+    transition: opacity 1s ease-in-out;
+}
 
-    .header.zoomed {
+.header.zoomed {
+    animation: zoomHeader 3s ease-in-out forwards;
+}
+
+@keyframes zoomHeader {
+    0% {
+        transform: scale(1.5);
+    }
+    100% {
         transform: scale(1);
-    }
-
-    .header__menu {
-        opacity: 0;
-        transform: translateY(-20px);
-        transition: opacity 1s ease, transform 1s ease;
-    }
-
-    .header__menu.visible {
-        opacity: 1;
-        transform: translateY(0);
     }
 }

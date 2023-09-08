@@ -21,6 +21,7 @@ hamburger.addEventListener('click', () => {
     if (hamburger.classList.contains('active')) {
         bars[1].style.width = '25px';
         bars[2].style.width = '25px';
+        document.body.style.overflow = "hidden";
     } else {
         bars[1].style.width = '20px';
         bars[2].style.width = '15px';

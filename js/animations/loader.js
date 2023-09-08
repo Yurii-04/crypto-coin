@@ -36,13 +36,3 @@ tlLoader
         },
         "-=0.3"
     );
-
-// Після закінчення анімації лоадера
-tlLoader.eventCallback("onComplete", function() {
-    // Затримка в 3 секунди перед відображенням header__menu
-    setTimeout(function() {
-      document.querySelector(".header__menu").classList.add("visible");
-    }, 1000); // Затримка в 3 секунди (або інша потрібна вам)
-  });
-  
-  
