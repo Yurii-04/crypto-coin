@@ -46,14 +46,14 @@
 .gallery__img--inner h3 {
     font-size: .8rem; 
     text-align: center;
-    color: #cac0c0;
+    color: #fff;
     margin-top: 0; 
 }
 
 .gallery__img--inner p {
     font-size: 0.7rem; 
     padding: 10px 0;
-    color: #cec4c4;
+    color: #f3eaea;
     margin-bottom: 0;
 }
 

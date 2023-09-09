@@ -4,4 +4,5 @@ document.addEventListener("partialsLoaded", () => {
     import("./animations/header.js");
     import("./arrow.js");
     import("./history-carousel.js");
+    import("./main.js");
 });

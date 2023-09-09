@@ -27,9 +27,14 @@
     max-height: 35px;
 }
 
+.menu__item:hover {
+    transition: .4s;
+    color: #fff;
+}
+
 .menu__item::after {
     content: "";
-    background: white;
+    background: rgb(0, 0, 0);
     mix-blend-mode: exclusion;
     width: calc(100% + 20px);
     height: 0;
@@ -100,7 +105,7 @@
         position: fixed;
         left: 0;
         top: -140%;
-        height: 100vh;
+        height: 100%;
         gap: 0;
         flex-direction: column;
         background: url(../img/burger-bg.gif);

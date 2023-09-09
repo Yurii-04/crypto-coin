@@ -40,7 +40,7 @@
 }
 
 .dark-history__card {
-    background: #4f4f52;
+    background: #191c29;
     width: var(--card-width);
     height: var(--card-height);
     padding: 3px;
@@ -121,5 +121,15 @@
 
     .dark-history__card:nth-child(1) {
         margin-bottom: 5vh;
+    }
+}
+
+.dark-history__card-p {
+    font-size: 0.55rem;
+}
+
+@media (max-width: 320px) {
+    .dark-history__card-p {
+        font-size: 0.3rem;
     }
 }
