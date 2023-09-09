@@ -104,8 +104,8 @@
     .menu-wrapper__item {
         position: fixed;
         left: 0;
-        top: -140%;
-        height: 100%;
+        top: -200%;
+        height: 120%;
         gap: 0;
         flex-direction: column;
         background: url(../img/burger-bg.gif);
