@@ -8,11 +8,14 @@
     padding-top: 50px;
     text-align: center;
     letter-spacing: 7px;
+    margin-bottom: 10px;
 }
 
 .dark-history__subtitle {
     margin-top: 40px;
     text-align: center;
+    margin: 5px;
+    font-size: .7rem;
 }
 
 /* picture */

@@ -12,7 +12,9 @@
 
 .history__subtitle {
     margin-top: 40px;
+    margin: 5px;
     text-align: center;
+    font-size: .7rem;
 }
 
 /* picture */
@@ -43,7 +45,7 @@
     display: flex;
     color: rgba(224, 139, 41, 0);
     cursor: pointer;
-    font-family: cursive;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .history__card:nth-child(1) {
@@ -129,7 +131,13 @@
 }
 
 .history__card-p {
-    font-size: 0.55rem;
+    font-size: 0.5rem;
+}
+
+@media (max-width: 400px) {
+    .history__card-p {
+        font-size: 0.4rem;
+    }
 }
 
 @media (max-width: 320px) {
